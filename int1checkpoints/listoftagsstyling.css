@@ -1,0 +1,23 @@
+.coding {
+    padding:15px;
+    background-color:black;
+    color:white;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align:center;
+}
+p {
+    text-align:center;
+}
+.alignment {
+    display: inline-block;
+}
+.centering {
+    text-align: center
+}
+h3 {
+    text-align: center;
+}

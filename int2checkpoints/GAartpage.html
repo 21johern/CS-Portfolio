@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <!--The line below runs the javascript from a separate page that my teacher set up. I do not know how this page works, 
+  but based on the amount of content it holds, I cannot figure that out very quickly.-->
+  <script src="processing.min.js"></script>
+  <!-- The line below sets the title to 'Art Design Page'. You can see this if you look at the name of the tab in your browser.-->
+  <title>Art Design Page</title>
+  <!--This next line sets an image of a dragon as the icon in the tab label.-->
+  <link rel="icon" href="https://d2t1xqejof9utc.cloudfront.net/sketches/pics/7006/medium.png?1403983556" type="text/css" />
+  <!--The next line sets the styling for the navbar by linking it to an external CSS document.-->
+  <link rel="stylesheet" href="../int1checkpoints/navbar.css" type="text/css" />
+</head>
+
+<body>
+  <!--This is the navbar. It is an unordered list of links that has been modified with CSS so that it looks like a bar  at the top of the screen,
+  not a list.-->
+  <ul class="navbar">
+    <!--All of the items from here until the end of the unordered list are links to webpages that can be summarized by the white writing in each
+    list item.-->
+    <a href="../int1checkpoints/moreaboutme.html" target="_blank">
+      <li>More About Me</li>
+    </a>
+    <a href="../int1checkpoints/index.html" target="_blank">
+      <li>Homepage</li>
+    </a>
+    <a href="../int1checkpoints/listoftags.html" target="_blank">
+      <li>What I've Learned About Coding</li>
+    </a>
+    <a href="../int1checkpoints/howtopage.html" target="_blank">
+      <li>How I Made the Homepage and Both Subpages</li>
+    </a>
+    <a href="../int2checkpoints/howtoartpage.html" target="_blank">
+      <li>How I Made This Page</li>
+    </a>
+  </ul>
+  <!--A canvas is essentially just a container for visuals, which I use as an area to insert my actual art project in. -->
+  <canvas id="output-canvas"></canvas>
+  <!-- Similarly to the first line of code I explained, this next line puts the content from a separate javascript file the body, specifically in 
+  the canvas because of thelast line of the linked file.-->
+  <script src="GAartpage.js"></script>
+</body>
+
+</html>

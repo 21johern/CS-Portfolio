@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="processing.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How I Made the Art Design Page </title>
+    <link rel="icon" href="https://d2t1xqejof9utc.cloudfront.net/sketches/pics/7006/medium.png?1403983556" type="text/css" />
+    <link rel="stylesheet" href="../int1checkpoints/howtopagestyling.css" type="text/css" />
+    <link rel="stylesheet" href="../int1checkpoints/navbar.css" type="text/css" />
+</head>
+
+<body>
+    <ul class="navbar">
+        <a href="../int1checkpoints/index.html" target="_blank">
+            <li>Homepage</li>
+        </a>
+        <a href="../int1checkpoints/moreaboutme.html" target="_blank">
+            <li>More About Me</li>
+        </a>
+        <a href="../int1checkpoints/listoftags.html" target="_blank">
+            <li>What I've Learned About Coding</li>
+        </a>
+        <a href="howtopage.html" target="_blank">
+            <li>How I Made the Homepage and Both Subpages</li>
+        </a>
+        <a href="GAartpage.html" target="_blank">
+            <li>My Art Design Page</li>
+        </a>
+    </ul>
+    <h1>How I Made the Art Design Page</h1>
+    <div class="homepage">
+        <h2>Intro</h2>
+        <p>For a project in my computer science class, I was required to make a art piece with javascript that expresses an emotion. 
+        In my case, that was boredom, but over time, it became less of an expression and more of a remedy. My project was fueled by 
+        my friends telling me "Make it do this". The end result was a prgram that makes four colors burst out of wherever you click or 
+        move your mouse, one going down, one going up, another going left, and the last going right. Throughut the rest of this page, 
+        I will be explaining how I made this program and why I used what I did. You can find my project on the navbar labeled 'My Art Design Page'</p>
+    </div>
+    <h1></h1>
+    <div class="homepage">
+        <h2>The HTML File</h2>
+        <h3>The Logo</h3>
+        <div class="alignment">
+            <div class="imageparagraph">
+                <span class- "indenthere"><p>After deciding that the blank document symbol was boring, I used the internet to discover the fact that 
+                it's not hard to add a logo. Like you always do when linking two files, you start with &lt;link rel=&quot;&quot; href=&quot;&quot; 
+                type=&quot;&quot;/&gt;. <br> From there, you have to decide from <span><a href="https://www.w3schools.com/tags/att_link_rel.asp" 
+                target="_blank">these options</a></span> for what purpose
+                your link will serve. To create an icon, <br> put the word "icon" inside of the first set of quotation marks. Next, put the link to the desired image in the second set of quotations. Lastly, put the link's appropriate document type in
+                the third set of quotations. For images, the correct type is 'text/css'. I wound up with tThis is the resulting code:</p>
+                </Span>
+            </div>
+            <div class="paragraphimage3">
+                <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
+            </div>
+        </div>
+        <h3>The Navigation Bar</h3>
+        <div class="indent here">
+            <p>I wanted to allow my users to be able to navigate my website so I sought out to make a navigation bar.
+            In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line. It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options separate,
+            I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is really just a list of links) is to make them list items.</p>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <p>A literal list of links will turn out looking like this:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code">
+                    <p>&lt;ul&gt;</p>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;moreaboutme.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;index.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;Homepage&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;listoftags.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;howtopage.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;GAartpage.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;My Art Design Page&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <p>&lt;/ul&gt;</p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <p>Unfortunately, if I use this code, this is what it will look like in the webpage:
+                    <br>
+                </p>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code">
+                    <ul>
+                        <a href="moreaboutme.html">
+                            <li>More About Me</li>
+                        </a>
+                        <a href="listoftags.html">
+                            <li>What I've Learned About Coding</li>
+                        </a>
+                        <a href="howtopage.html">
+                            <li>How I Made the Homepage and Both Subpages</li>
+                        </a>
+                        <a href="GAartpage.html">
+                            <li>How I Made the Art Design Page</li>
+                        </a>
+                        <a href="howtopage.html">
+                            <li>How I Made the Homepage and Both Subpages</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="indenthere">
+            <p>In order to fix the navigation bar and make it actually look pretty, like the one you see at the top of this page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to change the
+                font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a little bit of spacing in between them, and get rid of the text decoration.</p>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment2">
+                <p>To start, I attached the 'navbar' class to the list so that my CSS would only affect that specific list<br> and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="imageandtextalignment2">
+                <div class="code">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <div class="indenthere">
+                            <li>background-color:black;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-align:center;</li>
+                        </div>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color:white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration: none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
+                        <li>}</li>
+                        <li>.navbar li {</li>
+                        <div class="indenthere">
+                            <li>list-style: none;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br> For this, I used the background-color declaration, which changes the background color. My code looked like this:
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br> For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br> not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br> In order to do this I used the color declaration, which changes the font color. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br> In order to do this I used the border declaration, which changes the border size. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br> In order to do this I used the text-decoration declaration, which changes the decoration of the text.
+                        My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br> In order to do this I used the padding declaration, which changes the space between the object(including the
+                        edge of the screen)<br> and the object the padding is on. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <div class="indenthere">
+                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br> have bullet points. In order to do this I used the list-style declaration, which sets all properties of
+                        a list in one<br> declaration. In the end, this was my CSS code:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
+                </div>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <li>.navbar {</li>
+                        <span class="indenthere"><li>background-color:black;</li></span>
+                        <span class="indenthere"><li>text-align:center;</li></span>
+                        <li>}</li>
+                        <li>.navbar a {</li>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
+                        <li>}</li>
+                        <li>.navbar li {</li>
+                        <div class="indenthere">
+                            <li>list-style:none;</li>
+                        </div>
+                        <li>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3>The Canvas</h3>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <span class="indenthere"><p>
+                When making my art project, I needed a way to display my graphics, which is why I am happy to use a canvas. 
+                A canvas is simply a container for graphics. <br>
+                To make the canvas that I used insert my javascript onto
+                my HTML page, I used this code:<br>
+                You will propbably notice that there is an incredibly small amount of code, which is largely because the only thing my canvas<br>
+                includes is an identification that is linked to a document that is linked next. 
+                </p></span>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code">
+                    <p>&lt;canvas id=&quot;output-canvas&quot;&gt;&lt;/canvas&gt;
+                        <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageandtextalignment">
+                <span class="indenthere"><p><br>
+                In order to link this canvas to my javascript document, I ended my javascript <br>
+                with this code:<br>
+                All this does is links my javascript document the same identification as the canvas<br> 
+                created on my HTML document, so that when they are linked, the javscript will be <br>
+                executed inside of the canvas.</p></span>
+            </div>
+            <div class="imageandtextalignment">
+                <div class="code2">
+                    <ul class="listlesslist">
+                        <p>var p = new Processing(document.getElementById(&quot;output-canvas&quot;), sketch);</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="imageparagraph">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>Finally, I had to link my javscript document to my html document, or the whole canvas would 
+                    be pointless and do nothing. This was my code for doing so:<br>
+                    All this code does is explicitly state what URL the script should come from, in this case my infamous javascript file,
+                    where all of the actual art in my art page calls home.</p></Span>
+                </div>
+                <div class="paragraphimage3">
+                    <img src="https://image.ibb.co/n2ixMm/Screenshot_2018_01_18_at_3_03_59_PM.png"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    <div class="homepage">
+        <h2>The Javascript File</h2>
+        <h3>The Size</h3>
+        <div class="imageparagraph">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>To start our projects, Mr. Hesby, my<br>   
+                                                 computer science teacher, gave us some<br>
+                                                 base code, which looked like this:</p></Span>
+                </div>
+                <div class="paragraphimage2">
+                    <img src="https://image.ibb.co/eVZbGw/Screenshot_2018_01_18_at_7_55_30_PM.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="imageparagraph">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                    <br>
+                    My first step towards making my art project was changing the amount of space the project takes up.
+                    I did this by changing 'size(400, 400);' to 'size(1366, 629);', which changed the size of the 
+                    produced page from 400 pixels wide and 400 pixels tall to 1366 pixels wide and 629 pixels tall.
+                    My code now looked like this:</p></Span>
+                </div>
+                <div class="paragraphimage3">
+                    <img src="https://image.ibb.co/i8mZ3b/Screenshot_2018_01_18_at_8_17_56_PM.png"></img>
+                </div>
+            </div>
+        </div>
+        <h3>The Background</h3>
+        <div class="imageparagraph">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                    <br>
+                    In order to embody the randomness of a bored person, my second step towards making my art project was randomizing
+                    the background color. I did this becuse it sounded fun, and I knew it was fairly simple. All this required was changing 
+                    'background(255);' to 'background(random(255), random(255), random(255));', which changed the size of the 
+                    produced page from 400 pixels wide and 400 pixels tall to 1366 pixels wide and 629 pixels tall.
+                    My code now looked like this:</p></Span>
+                </div>
+                <div class="paragraphimage3">
+                    <img src="https://image.ibb.co/i8mZ3b/Screenshot_2018_01_18_at_8_17_56_PM.png"></img>
+                </div>
+            </div>
+        </div>
+
+        <h3>The Array</h3>
+        <div class="alignment">
+            <div class="imageparagraph">
+                <span class- "indenthere"><p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    After changing the background of my page, I added an array. An array is a variable that can hold a list of values. 
+                    Though the array you see now is blank, I needed it in order to animate the movement in my art project. This was now my code:</p></Span>
+            </div>
+            <div class="paragraphimage3">
+                <img src="https://image.ibb.co/icda9G/Screenshot_2018_01_18_at_8_26_37_PM.png"></img>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="imageparagraph">
+                <span class- "indenthere"><p>
+                    <br>
+                    Good for me *rolls eyes*, I made an array. But what do I even use this empty list for? In my project, I use an array to hold
+                    coordinates for where to create circles. You may also be wondering how I can do that with an empty array. The answer is simple:
+                    make a way to add things to the array. I chose to add the mouse's x and y coordinates whenever the mouse clicks or is moved,
+                    to the array. When adding items to an array, you have the option of giving them categories. For reasons I will explain later,
+                    I created 8 categories, 4 separate sets of x coordinates, and 4 sets of y coordinates. In order to do so, I used push to 
+                    add things to my array, as well as 'mouseClicked = function()' and 'mouseMoved = function()' to make these coordinates get 
+                    added to my array whenever I clicked or moved the mouse. This was the code I wound up with:</a></p></Span>
+            </div>
+            <div class="paragraphimage3">
+                <img src="https://image.ibb.co/kHUbGw/Screenshot_2018_01_18_at_9_14_29_PM.png"></img>
+            </div>
+        </div>
+        <h3>The For Loop</h3>
+        <div class="alignment">
+            <div class="imageparagraph">
+                <span class- "indenthere"><p>
+                    <br>
+                    Cool. We have a very full array assuming the user knows how to move/click a mouse. Now what does that array do? Nothing yet.
+                    Next, we will add a for loop inside of the 'draw = function'. This is where things get complicated. I starts at 0, grows 
+                    by one each time it repeats, and repeats as long as i is less than the number of items in our array. It can re-enter the 
+                    loop since it is inside of the 'draw = function', which repeats its content around 60 times a second. Your code should 
+                    now look like this:</a></p></Span>
+            </div>
+            <div class="paragraphimage3">
+                <img src="https://image.ibb.co/dEG9KG/Screenshot_2018_01_18_at_10_11_36_PM.png"></img>
+            </div>
+        </div>
+        <h3>The Circles</h3>
+        <div class="alignment">
+            <di v class="imageparagraph">
+                <span class- "indenthere"><p>
+                    <br>
+                    Sorry, it still does nothing. I know. We're getting there. Next, inside of this for loop, we need to make a ellipse with the 
+                    x position as ballPos[i].xa and ballPos[i].ya as it's x and y coordinates, and 15 as its length and width. Then, copy and 
+                    paste this ellipse directly underneath the one you just created until you have 4. After that, change the xa and ya 
+                    to xb and yb for the second, xc and yc for the third, and xd and yd for the fourth. This should make circles wherever you put
+                    your mouse/click. Your code should look like this:</p></Span>
+            </div>
+            <div class="paragraphimage3">
+                <img src="https://image.ibb.co/mL5GYb/Screenshot_2018_01_18_at_10_46_18_PM.png"></img>
+            </div>
+        </div>
+        <canvas id="output1-canvas"></canvas>
+        <script src="examplebasecode.js"></script>
+    <div class="homepage">    
+        <div class="alignment">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                    Hey, look at that, now it makes cirles wherever you move your mouse or click. That's because ballPos[i].___ takes the number i 
+                    value of that category in the array, going from left to right, starting with 0 on the left. Since that is always the most
+                    recently created value and cannot be greater than the array's length, you always create a circle at the most recent location 
+                    your mouse was at. Now, I want these circles to look pretty so that I can enjoy my piece more. Now let's add some movement. Directly 
+                    above the first circle add 'ballPos[i].ya += 6;'; above the second, put 'ballPos[i].xb += 6;'; above the third, put 
+                    'ballPos[i].yc -= 6;'; finally, above the fourth, put 'ballPos[i].xd -= 6;'.  Since (0,0) is the  upper left corner,
+                    adding to y will lower your circle, subtracting form y will move yur circle  up, adding to x will move your circle right, and
+                    subtracting from x  will move a circle to the left. This is because if you cannot go above 0 in height, adding tothe y position
+                    should move circles down, and vice versa. The same logic applies to the x value. This will allow the circles to move away 
+                    from where you click/move your mouse. Your code should look like this:</p></Span>
+                </div>
+                <div class="paragraphimage3">
+                    <img src="https://image.ibb.co/icTvtb/Screenshot_2018_01_18_at_11_09_02_PM.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="alignment">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                    Next on the beautification list: colors and no more ugly borders. First, create four variables beneath the array, each set to a random 
+                    value using 'random(minimum, maximum)' as the given value. The first variable should be named 'numberOne', the second 'numberTwo',
+                    the third 'numberThree', and the fourth 'numberFour'. Give 'numberOne' the value 'random(25, 175)', numberTwo 'random(50, 200)',
+                    numberThree 'random(75, 225)', and give numberFour 'random(100, 250);'. Next, put 'fill(numberOne, numberTwo, numberThree);'
+                    directly above the first ellipse, 'fill(numberTwo, numberThree, numberFour);' above the second, 
+                    'fill(numberThree, numberFour, numberOne);' above the third, and 'fill(numberFour, numberOne, numberTwo);' above the fourth.
+                    Lastly(as far as the beautification goes), right above the 'draw = function', add 'noStroke();'. Your code should look like this(extra code is cut off): </p></Span>
+                </div>
+                <div class="paragraphimage3">
+                    <img src="https://image.ibb.co/cZYyeG/Screenshot_2018_01_18_at_11_43_01_PM.png"></img>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <canvas id="output2-canvas"></canvas>
+        <script src="examplebasecodepart2.js"></script>
+    <div class="homepage">    
+        <div class="alignment">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                     Hey, that's pretty good! We're not done yet though.
+                     I know, I know, just a couple more things. Add the
+                     following code above your for loop, but inside the
+                     'draw = function':
+                     </p></Span>
+                </div>
+                <div class="paragraphimage">
+                    <img src="https://image.ibb.co/iaT3Db/Screenshot_2018_01_18_at_11_40_16_PM.png"></img>
+                </div>
+            </div>
+        </div> 
+        <div class="alignment">
+            <div class="alignment">
+                <div class="imageparagraph">
+                    <span class- "indenthere"><p>
+                    <br>
+                     That calls a function that is dependent on numberOne's value if any/all(in order for two 
+                     ellipses to be the same color they must all be) two elipses would have the same color(1 
+                     in 506,250,000 chance; I take no risks). Based off of the names, we can infer that these
+                     functions change the RGB values for the circles, either making them all darker, lighter,
+                     or some of each, attempting to make sure the circles are different colors. If this were 
+                     to somehow happen again, the invocation for these functions lies in the 'draw = function'
+                     which repeats. Before we say goodbye, we should probably add those functions right about now. Put the following
+                     code above the 'noStroke()':</p></Span>
+                </div>
+                <div class="paragraphimage4">
+                    <img src="https://image.ibb.co/eVtvtb/Screenshot_2018_01_19_at_12_01_29_AM.png"></img>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <canvas id="output-canvas"></canvas>
+        <script src="GAartpage.js"></script>
+    </div>
+    <h1></h1>
+    <div class="homepage">
+        <h2>Outro</h2>
+        <p>After all of that coding, I have onebig takeaway: arrays are incredibly useful for animation.
+        After using an array to have a list that I could reference and run through quickly, I could easily 
+        see it being used to flip through frames on an animation. Somehow the simple variable that is a 
+        list of values made my project, allowing it to be animated, not just a dot sitting in place.<br>
+        Given another chance, I would probably make this project have colors burst out in 8 directions,
+        going diagnolly as well. <br>
+        One final though: thank you Audrey, you helped me so much thoughout this project and you helped
+        me better unerstand javascript. I enjoyed this project, and I hope are entertained by the results!</p>
+    </div>
+</body>
+
+</html>

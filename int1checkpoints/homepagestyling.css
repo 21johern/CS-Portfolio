@@ -1,0 +1,37 @@
+body { 
+    background-color:white;   
+}
+.aboutme {
+    padding:15px;
+    background-color:black;
+    color:white;
+    text-align:right;
+}
+.coding {
+    padding:15px;
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+h1 {
+    text-align:center;
+    background-color:white;
+}
+h2 {
+    text-align:center;
+}
+h3 {
+     text-align:right;
+}
+table, th, td {
+    border: 1px solid white;
+}
+.imageparagraph {
+    width:60%;
+    display: inline-block;
+    vertical-align:top;
+}
+.paragraphimage {
+    display:inline-block;
+    width:35%;
+}

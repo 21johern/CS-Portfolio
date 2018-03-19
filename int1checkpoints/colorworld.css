@@ -1,0 +1,22 @@
+        body {
+            color: white
+        }
+        body{
+            background-color:black;
+        }
+        table,th,td {
+            border: 1px solid white;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            /*margin:30px;*/
+        }
+        p {
+            text-align: center;   
+        }
+        body {
+            margin: 50px 50px 50px 50px;
+        }

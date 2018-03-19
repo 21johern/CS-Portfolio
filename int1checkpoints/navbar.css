@@ -1,0 +1,14 @@
+.navbar {
+background-color:black; 
+text-align:center; 
+}
+.navbar a {
+    display:inline-block;
+    color:white;
+    border:2px solid white;
+    text-decoration: none;
+    padding:10px;
+}
+.navbar li {
+    list-style: none;
+}
