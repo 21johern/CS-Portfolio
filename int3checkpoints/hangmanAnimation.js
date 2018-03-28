@@ -41,7 +41,7 @@
             }
             else if (nextFrame === 11) {
                 line(305,48,295,48);
-                message.innerHTML = "YOU LOSE . . ."
+                message.innerHTML = "YOU LOSE . . .";
             }
         };
     }

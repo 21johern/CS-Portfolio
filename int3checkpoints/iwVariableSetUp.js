@@ -1,5 +1,7 @@
-/* global nextFrame correctGuesses message*/
+/* global nextFrame correctGuesses message */
+// This generates a random number between 0-5, then stores it in the variable randomNumber to be later referenced. 
 var randomNumber = Math.floor(Math.random() * 6);
+// All variables created from lined 5-24 all get a specific element by its id, then makess it into a variable that can be later modified. 
 var message = document.getElementById("message");
 var guess1 = document.getElementById("guess1");
 var guess2 = document.getElementById("guess2");
@@ -20,9 +22,17 @@ var letter3 = document.getElementById("letter3");
 var letter4 = document.getElementById("letter4");
 var letter5 = document.getElementById("letter5");
 var letter6 = document.getElementById("letter6");
+// This array is used to give each "guess#" the value that was guessed at that time. More on this will be explained later, but in short, it 
+// contains the value guessed and gives them a number to be accessed by.
 var previousGuesses = [];
+// The variable lastGuess is a number that increases by each time that a letter is guessed, and is used as the value to be checked in the array
+// when the button is pressed. 
 var lastGuess = -1;
+// When you get something wrong, the variable nextFrame goes up by one, triggering a new hangman body part being drawn. This reaction happens in 
+// a different file, using global variables to work across multiple files.
 var nextFrame = 0;
+// This is similar to the variable above, except this value changes when the user guesses correctly, and instead of adding to the hangman, 
+// this will cause the  
 var correctGuesses = 0;
 button.addEventListener("click", function() {
     var lettersLeft = 6 - correctGuesses;

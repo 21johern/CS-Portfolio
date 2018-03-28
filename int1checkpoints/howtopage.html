@@ -1,118 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>How I Made the Homepage and Both Subpages(Including This One) </title>
-    <link rel="icon" href="https://d2t1xqejof9utc.cloudfront.net/sketches/pics/7006/medium.png?1403983556" type="text/css"/>
-    <link rel="stylesheet" href="howtopagestyling.css" type="text/css"/>
-    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <link rel="icon" href="https://d2t1xqejof9utc.cloudfront.net/sketches/pics/7006/medium.png?1403983556" type="text/css" />
+    <link rel="stylesheet" href="howtopagestyling.css" type="text/css" />
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
 </head>
+
 <body>
     <ul class="navbar">
-        <a href="moreaboutme.html" target="_blank"><li>More About Me</li></a>
-        <a href="index.html" target="_blank"><li>Homepage</li></a>
-        <a href="listoftags.html" target="_blank"><li>What I've Learned About Coding</li></a>
-        <a href="howtopage.html" target="_blank"><li>How I Made the Homepage and Both Subpages</li></a>
-        <a href="../int2checkpoints/GAartpage.html" target="_blank"><li>My Art Design Page</li></a>
+        <a href="moreaboutme.html" target="_blank">
+            <li>More About Me</li>
+        </a>
+        <a href="index.html" target="_blank">
+            <li>Homepage</li>
+        </a>
+        <a href="listoftags.html" target="_blank">
+            <li>What I've Learned About Coding</li>
+        </a>
+        <a href="../int2checkpoints/GAartpage.html" target="_blank">
+            <li>My Art Design Page</li>
+        </a>
+        <a href="../int2checkpoints/howtoartpage.html" target="_blank">
+            <li>How I Made the Art Page</li>
+        </a>
+        <a href = "../int3checkpoint/iwPage.html" target="_blank">
+            <li>Hangman Game</li>
+        </a>
+        <a href = "../int3checkpoint/howToHangman.html" target="_blank">
+            <li>How I made the Hangman Game</li>
+        </a>
     </ul>
     <h1>How I Made the Homepage and Both Subpages</h1>
     <div class="homepage">
         <h2>How I Made the Homepage</h2>
         <h3>The Logo</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
+                <span class- "indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
-            </div>     
+                <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
+            </div>
         </div>
         <h3>The Navigation Bar</h3>
         <div class="indent here">
-            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line.
-            It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options
-            separate, I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is
-            really just a list of links) is to make them list items.</p>
+            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line. It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options separate,
+                I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is really just a list of links) is to make them list items.</p>
         </div>
         <div class="alignment">
-            <div class="imageandtextalignment"><p>A literal list of links will turn out looking like this:<br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <div class="imageandtextalignment">
+                <p>A literal list of links will turn out looking like this:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
                     <p>&lt;ul&gt;</p>
-                    <div class="indenthere"><p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p></div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p>
+                    </div>
                     <p>&lt;/ul&gt;</p>
                 </div>
             </div>
             <div class="imageandtextalignment">
                 <p>Unfortunately, if I use this code, this is what it will look like in the webpage:
-                <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                     <ul>
-                        <a href="moreaboutme.html"><li>More About Me</li></a>
-                        <a href="listoftags.html"><li>What I've Learned About Coding</li></a>
-                        <a href="howtopage.html"><li>How I Made the Homepage and Both Subpages</li></a>
+                    <ul>
+                        <a href="moreaboutme.html">
+                            <li>More About Me</li>
+                        </a>
+                        <a href="listoftags.html">
+                            <li>What I've Learned About Coding</li>
+                        </a>
+                        <a href="howtopage.html">
+                            <li>How I Made the Homepage and Both Subpages</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="indenthere">
-            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this
-            page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to
-            change the font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a
-            little bit of spacing in between them, and get rid of the text decoration.</p>
-        </div> 
+            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to change the
+                font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a little bit of spacing in between them, and get rid of the text decoration.</p>
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment2">
-                <p>To start, I  attached the 'navbar' class to the list so that my CSS would only affect that specific list<br>
-                and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>To start, I attached the 'navbar' class to the list so that my CSS would only affect that specific list<br> and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
-            </div> 
+            </div>
             <div class="imageandtextalignment2">
                 <div class="code">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
-                            <div class="indenthere"><li>background-color:black;</li></div>
-                            <div class="indenthere"><li>text-align:center;</li></div >
+                        <div class="indenthere">
+                            <li>background-color:black;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-align:center;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar a {</li>
-                            <div class="indenthere"><li>display:inline-block;</li></div>
-                            <div class="indenthere"><li>color:white;</li></div>
-                            <div class="indenthere"><li>border:2px solid white;</li></div>
-                            <div class="indenthere"><li>text-decoration: none;</li></div>
-                            <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color:white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration: none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                            <div class="indenthere"><li>list-style: none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style: none;</li>
+                        </div>
                         <li>}</li>
-                    </ul> 
-                </div>    
+                    </ul>
+                </div>
             </div>
-        </div>    
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br>
-                    For this, I used the background-color declaration, which changes the background color. My code looked like this:
-                    <br>
-                    <br>
+                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br> For this, I used the background-color declaration, which changes the background color. My code looked like this:
+                        <br>
+                        <br>
                     </p>
                 </div>
             </div>
@@ -129,10 +170,9 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br>
-                    For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
-                    <br>
-                    <br></p>
+                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br> For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -149,12 +189,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br>
-                     not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br> not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -165,7 +204,9 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -174,12 +215,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br>
-                    In order to do this I used the color declaration, which changes the font color. My code looked like this:
-                    <br> 
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br> In order to do this I used the color declaration, which changes the font color. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -190,8 +230,12 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -200,12 +244,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br>
-                      In order to do this I used the border declaration, which changes the border size. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br> In order to do this I used the border declaration, which changes the border size. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -216,9 +259,15 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -227,12 +276,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br>
-                      In order to do this I used the text-decoration declaration, which changes the decoration of the text. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br> In order to do this I used the text-decoration declaration, which changes the decoration of the text.
+                        My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -243,10 +292,18 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -255,13 +312,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br>
-                      In order to do this I used the padding declaration, which changes the space between the object(including the edge of the screen)<br>
-                      and the object the padding is on. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br> In order to do this I used the padding declaration, which changes the space between the object(including the
+                        edge of the screen)<br> and the object the padding is on. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -272,11 +328,21 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -285,16 +351,15 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br>
-                       have bullet points. In order to do this I used the list-style declaration, which sets all properties of a list in one<br>
-                       declaration. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br> have bullet points. In order to do this I used the list-style declaration, which sets all properties of
+                        a list in one<br> declaration. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
-        <div class="imageandtextalignment">
+            <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
@@ -302,14 +367,26 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                        <div class="indenthere"><li>list-style:none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -319,18 +396,19 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The header is pretty straightforward. To make the header, I used this code:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;<p></p>
+                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;
+                        <p></p>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The title of a website is meant to be very clearly visible, so I decide to use CSS code to put my<br>
                 title in the center of my page. This is the CSS code I used:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
@@ -339,7 +417,7 @@
                         <li>}</li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
         <h3>The Background</h3>
         <span class="indenthere"><p class="imageandtextalignment">Technically speaking, the background color is white. Despite this, when you are looking at my home page, you will 
@@ -354,7 +432,7 @@
                     <li>&lt;/div&gt;</li>
                 </ul>
             </div>
-        </div>  
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>I wrap this div around the content, as shown above.The whole<br>
@@ -376,26 +454,28 @@
                 </div>
             </div>
         </div>
-        <div class="indenthere"><p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), 
-        the background-color declaration chages the background color to my desired color(black), the color declaration changes the text color to my
-        desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p></div>
-        <div class="indenthere"><p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference:
-        the alignment. Instead of the text alignment being set to "right", it is set to "center".</p></div>
+        <div class="indenthere">
+            <p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), the background-color declaration chages the background color to my desired color(black), the color
+                declaration changes the text color to my desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p>
+        </div>
+        <div class="indenthere">
+            <p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference: the alignment. Instead of the text alignment being set to "right", it is set to "center".</p>
+        </div>
         <h3>The Subheadings</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
+                <span class- "indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
+                <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
             </div>
             <div class="imageparagraph">
-                <span class-"indenthere"><p>with a "text-align:center;" to have the header in my desired area, the center.</p></span>
+                <span class- "indenthere"><p>with a "text-align:center;" to have the header in my desired area, the center.</p></span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
+                <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
             </div>
-        </div>    
+        </div>
         <h3>The Table</h3>
         <div class="alignment">
             <div class="imageandtextalignment">
@@ -482,10 +562,10 @@
                 <br>
                 <br>
                 </p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                   <ul class="listlesslist">
+                    <ul class="listlesslist">
                         </li>&lt;table&gt;</li>
                         <span class="indenthere"><li>&lt;thead&gt;</li></span>
                         <span class="indenthere100px"><li>&lt;&lt;th&gt;&lt;/th&gt;</span>
@@ -569,12 +649,11 @@
                         <span class="indenthere"><li>&lt;/tr&gt;</li></span>
                         <li>&lt;/table&gt;</li>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="alignment">
             <div class="imageparagraph">
-                <p>After making the table I attached some CSS to it. I used the border declaration to give my table borders and
-                make my table more organized. The CSS looked like this:</p>
+                <p>After making the table I attached some CSS to it. I used the border declaration to give my table borders and make my table more organized. The CSS looked like this:</p>
             </div>
             <div class="paragraphimage">
                 <img src="https://image.ibb.co/ksQSkb/Screenshot_2017_10_12_at_11_21_16_PM.png"></img>
@@ -583,13 +662,12 @@
         <h3>The Image and the Paragraph</h3>
         <div class="alignment">
             <div class="imageparagraph2">
-                <p>The code for an image and a paragraph is abut as basic<br>
-                as it gets. In any case, mine looks like this:</p>
+                <p>The code for an image and a paragraph is abut as basic<br> as it gets. In any case, mine looks like this:</p>
             </div>
             <div class="paragraphimage">
                 <img src="https://image.ibb.co/dXSJrG/Screenshot_2017_10_12_at_11_35_51_PM.png"></img>
             </div>
-        </div>       
+        </div>
         <div class="alignment">
             <div class="imageparagraph">
                 <span><p><br>
@@ -614,99 +692,122 @@
     <h1></h1>
     <div class="homepage">
         <h2>The More About Me Page</h2>
-                <h3>The Logo</h3>
-        <div class="alignment">    
+        <h3>The Logo</h3>
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
+                <span class- "indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
+                <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
             </div>
         </div>
-                <h3>The Navigation Bar</h3>
+        <h3>The Navigation Bar</h3>
         <div class="indent here">
-            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line.
-            It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options
-            separate, I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is
-            really just a list of links) is to make them list items.</p>
+            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line. It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options separate,
+                I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is really just a list of links) is to make them list items.</p>
         </div>
         <div class="alignment">
-            <div class="imageandtextalignment"><p>A literal list of links will turn out looking like this:<br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <div class="imageandtextalignment">
+                <p>A literal list of links will turn out looking like this:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
                     <p>&lt;ul&gt;</p>
-                    <div class="indenthere"><p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p></div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p>
+                    </div>
                     <p>&lt;/ul&gt;</p>
                 </div>
             </div>
             <div class="imageandtextalignment">
                 <p>Unfortunately, if I use this code, this is what it will look like in the webpage:
-                <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                     <ul>
-                        <a href="moreaboutme.html"><li>More About Me</li></a>
-                        <a href="listoftags.html"><li>What I've Learned About Coding</li></a>
-                        <a href="howtopage.html"><li>How I Made the Homepage and Both Subpages</li></a>
+                    <ul>
+                        <a href="moreaboutme.html">
+                            <li>More About Me</li>
+                        </a>
+                        <a href="listoftags.html">
+                            <li>What I've Learned About Coding</li>
+                        </a>
+                        <a href="howtopage.html">
+                            <li>How I Made the Homepage and Both Subpages</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="indenthere">
-            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this
-            page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to
-            change the font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a
-            little bit of spacing in between them, and get rid of the text decoration.</p>
-        </div> 
+            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to change the
+                font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a little bit of spacing in between them, and get rid of the text decoration.</p>
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment2">
-                <p>To start, I  attached the 'navbar' class to the list so that my CSS would only affect that specific list<br>
-                and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>To start, I attached the 'navbar' class to the list so that my CSS would only affect that specific list<br> and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
-            </div> 
+            </div>
             <div class="imageandtextalignment2">
                 <div class="code">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
-                            <div class="indenthere"><li>background-color:black;</li></div>
-                            <div class="indenthere"><li>text-align:center;</li></div >
+                        <div class="indenthere">
+                            <li>background-color:black;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-align:center;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar a {</li>
-                            <div class="indenthere"><li>display:inline-block;</li></div>
-                            <div class="indenthere"><li>color:white;</li></div>
-                            <div class="indenthere"><li>border:2px solid white;</li></div>
-                            <div class="indenthere"><li>text-decoration: none;</li></div>
-                            <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color:white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration: none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                            <div class="indenthere"><li>list-style: none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style: none;</li>
+                        </div>
                         <li>}</li>
-                    </ul> 
-                </div>    
+                    </ul>
+                </div>
             </div>
-        </div>    
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br>
-                    For this, I used the background-color declaration, which changes the background color. My code looked like this:
-                    <br>
-                    <br>
+                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br> For this, I used the background-color declaration, which changes the background color. My code looked like this:
+                        <br>
+                        <br>
                     </p>
                 </div>
             </div>
@@ -723,10 +824,9 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br>
-                    For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
-                    <br>
-                    <br></p>
+                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br> For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -743,12 +843,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br>
-                     not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br> not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -759,7 +858,9 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -768,12 +869,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br>
-                    In order to do this I used the color declaration, which changes the font color. My code looked like this:
-                    <br> 
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br> In order to do this I used the color declaration, which changes the font color. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -784,8 +884,12 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -794,12 +898,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br>
-                      In order to do this I used the border declaration, which changes the border size. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br> In order to do this I used the border declaration, which changes the border size. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -810,9 +913,15 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -821,12 +930,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br>
-                      In order to do this I used the text-decoration declaration, which changes the decoration of the text. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br> In order to do this I used the text-decoration declaration, which changes the decoration of the text.
+                        My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -837,10 +946,18 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -849,13 +966,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br>
-                      In order to do this I used the padding declaration, which changes the space between the object(including the edge of the screen)<br>
-                      and the object the padding is on. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br> In order to do this I used the padding declaration, which changes the space between the object(including the
+                        edge of the screen)<br> and the object the padding is on. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -866,11 +982,21 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -879,16 +1005,15 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br>
-                       have bullet points. In order to do this I used the list-style declaration, which sets all properties of a list in one<br>
-                       declaration. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br> have bullet points. In order to do this I used the list-style declaration, which sets all properties of
+                        a list in one<br> declaration. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
-        <div class="imageandtextalignment">
+            <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
@@ -896,35 +1021,48 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                        <div class="indenthere"><li>list-style:none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
             </div>
         </div>
-                <h3>The Header</h3>
+        <h3>The Header</h3>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The header is pretty straightforward. To make the header, I used this code:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;<p></p>
+                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;
+                        <p></p>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The title of a website is meant to be very clearly visible, so I decide to use CSS code to put my<br>
                 title in the center of my page. This is the CSS code I used:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
@@ -933,7 +1071,7 @@
                         <li>}</li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
         <h3>The Background</h3>
         <span class="indenthere"><p class="imageandtextalignment">Technically speaking, the background color is white. Despite this, when you are looking at my home page, you will 
@@ -948,7 +1086,7 @@
                     <li>&lt;/div&gt;</li>
                 </ul>
             </div>
-        </div>  
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>I wrap this div around the content, as shown above.The whole<br>
@@ -970,133 +1108,158 @@
                 </div>
             </div>
         </div>
-        <div class="indenthere"><p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), 
-        the background-color declaration chages the background color to my desired color(black), the color declaration changes the text color to my
-        desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p></div>
-        <div class="indenthere"><p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference:
-        the alignment. Instead of the text alignment being set to "right", it is set to "center".</p></div>
+        <div class="indenthere">
+            <p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), the background-color declaration chages the background color to my desired color(black), the color
+                declaration changes the text color to my desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p>
+        </div>
+        <div class="indenthere">
+            <p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference: the alignment. Instead of the text alignment being set to "right", it is set to "center".</p>
+        </div>
         <h3>The Subheadings</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
+                <span class- "indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
+                <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
             </div>
             <div class="imageparagraph">
-                <span class-"indenthere"><p>with a "text-align:center;" to have the header in my desired area, the center.</p></span>
+                <span class- "indenthere"><p>with a "text-align:center;" to have the header in my desired area, the center.</p></span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
+                <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
             </div>
-        </div> 
+        </div>
         <h3>The Paragraphs</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>Though all I have tons of paragraphs in the story, they are just a bunch of normal paragraphs,
+                <span class- "indenthere"><p>Though all I have tons of paragraphs in the story, they are just a bunch of normal paragraphs,
                 all following two CSS declarations: </p></span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/bQyNkb/Screenshot_2017_10_13_at_12_31_55_AM.png"></img>
+                <img src="https://image.ibb.co/bQyNkb/Screenshot_2017_10_13_at_12_31_55_AM.png"></img>
             </div>
-        </div> 
+        </div>
     </div>
     <h1></h1>
     <div class="homepage">
         <h2>The What I've Learned Page</h2>
         <h3>The Logo</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
+                <span class- "indenthere"><p>It's not hard to add a logo. This is all the code that it takes to add one:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
+                <img src="https://image.ibb.co/ebd05b/Screenshot_2017_10_13_at_8_44_40_AM.png"></img>
             </div>
-        </div>    
+        </div>
         <h3>The Navigation Bar</h3>
         <div class="indent here">
-            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line.
-            It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options
-            separate, I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is
-            really just a list of links) is to make them list items.</p>
+            <p>In order to make the navigation bar, I was going to need a way to keep all of the navigation options on one line. It doesn't look particularly good when your navigation bar is vertical. In order to keep the navigation bar options separate,
+                I would need them to be separate items. One way to keep items separate on a list,( a navigation bar is really just a list of links) is to make them list items.</p>
         </div>
         <div class="alignment">
-            <div class="imageandtextalignment"><p>A literal list of links will turn out looking like this:<br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <div class="imageandtextalignment">
+                <p>A literal list of links will turn out looking like this:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
                     <p>&lt;ul&gt;</p>
-                    <div class="indenthere"><p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p></div>
-                    <div class="indenthere"><p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p></div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;moreaboutme.html&quot;&gt;&lt;li&gt;More About Me&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;listoftags.html&quot;&gt;&lt;li&gt;What I've Learned About Coding&lt;/li&gt;&lt;/a&gt;</p>
+                    </div>
+                    <div class="indenthere">
+                        <p>&lt;a href=&quot;howtopage.html&quot;&gt;&lt;li&gt;How I Made the Homepage and Both Subpages&lt;/li&gt;</p>
+                    </div>
                     <p>&lt;/ul&gt;</p>
                 </div>
             </div>
             <div class="imageandtextalignment">
                 <p>Unfortunately, if I use this code, this is what it will look like in the webpage:
-                <br>
+                    <br>
                 </p>
             </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                     <ul>
-                        <a href="moreaboutme.html"><li>More About Me</li></a>
-                        <a href="listoftags.html"><li>What I've Learned About Coding</li></a>
-                        <a href="howtopage.html"><li>How I Made the Homepage and Both Subpages</li></a>
+                    <ul>
+                        <a href="moreaboutme.html">
+                            <li>More About Me</li>
+                        </a>
+                        <a href="listoftags.html">
+                            <li>What I've Learned About Coding</li>
+                        </a>
+                        <a href="howtopage.html">
+                            <li>How I Made the Homepage and Both Subpages</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="indenthere">
-            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this
-            page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to
-            change the font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a
-            little bit of spacing in between them, and get rid of the text decoration.</p>
-        </div> 
+            <p>In order to fix the navigation bar and make it actually look like the one you see at the top of this page, I would have to add some CSS code. In order to change the navbar to what you see at the top of this page, I would have to change the
+                font color, the backgrund color, add a border, delete the bullet points, put all three list items on one line, put a little bit of spacing in between them, and get rid of the text decoration.</p>
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment2">
-                <p>To start, I  attached the 'navbar' class to the list so that my CSS would only affect that specific list<br>
-                and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>To start, I attached the 'navbar' class to the list so that my CSS would only affect that specific list<br> and linked my homepage to a CSS file. I used this CSS code to accomplish my said goals:<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </p>
-            </div> 
+            </div>
             <div class="imageandtextalignment2">
                 <div class="code">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
-                            <div class="indenthere"><li>background-color:black;</li></div>
-                            <div class="indenthere"><li>text-align:center;</li></div >
+                        <div class="indenthere">
+                            <li>background-color:black;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-align:center;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar a {</li>
-                            <div class="indenthere"><li>display:inline-block;</li></div>
-                            <div class="indenthere"><li>color:white;</li></div>
-                            <div class="indenthere"><li>border:2px solid white;</li></div>
-                            <div class="indenthere"><li>text-decoration: none;</li></div>
-                            <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color:white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration: none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                            <div class="indenthere"><li>list-style: none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style: none;</li>
+                        </div>
                         <li>}</li>
-                    </ul> 
-                </div>    
+                    </ul>
+                </div>
             </div>
-        </div>    
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br>
-                    For this, I used the background-color declaration, which changes the background color. My code looked like this:
-                    <br>
-                    <br>
+                    <p>Since I wanted a black background for the navbar, I gave all things that have the 'navbar' class the declaration.<br> For this, I used the background-color declaration, which changes the background color. My code looked like this:
+                        <br>
+                        <br>
                     </p>
                 </div>
             </div>
@@ -1113,10 +1276,9 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br>
-                    For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
-                    <br>
-                    <br></p>
+                    <p>Next I centered all things with the 'navbar' class, so that my navigation bar was easier to notice.<br> For this, I used the text-align declaration, which changes the alignment of the text color. My code looked like this:
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1133,12 +1295,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br>
-                     not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that I put all links with the 'navbar' class in a straight line, so that my navigation bar actually a straight line,<br> not a box. For this, I used the display declaration, which changes the layout. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1149,7 +1310,9 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -1158,12 +1321,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br>
-                    In order to do this I used the color declaration, which changes the font color. My code looked like this:
-                    <br> 
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I made all links with the 'navbar' class have a white font so that my navigation bar more visible.<br> In order to do this I used the color declaration, which changes the font color. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1174,8 +1336,12 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -1184,12 +1350,11 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br>
-                      In order to do this I used the border declaration, which changes the border size. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>After that, I added a border to all links with the 'navbar' class, so that they were better separated.<br> In order to do this I used the border declaration, which changes the border size. My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1200,9 +1365,15 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -1211,12 +1382,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br>
-                      In order to do this I used the text-decoration declaration, which changes the decoration of the text. My code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next I got rid of the underlining of all links with the 'navbar' class, so that they weren't ugly(I don't like how that looks).<br> In order to do this I used the text-decoration declaration, which changes the decoration of the text.
+                        My code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1227,10 +1398,18 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -1239,13 +1418,12 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br>
-                      In order to do this I used the padding declaration, which changes the space between the object(including the edge of the screen)<br>
-                      and the object the padding is on. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Next, I separated the all of the links with the 'navbar' class even more, so that the options weren't smushed together.<br> In order to do this I used the padding declaration, which changes the space between the object(including the
+                        edge of the screen)<br> and the object the padding is on. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
             <div class="imageandtextalignment">
@@ -1256,11 +1434,21 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
@@ -1269,16 +1457,15 @@
         <div class="alignment">
             <div class="imageandtextalignment">
                 <div class="indenthere">
-                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br>
-                       have bullet points. In order to do this I used the list-style declaration, which sets all properties of a list in one<br>
-                       declaration. At that point, my code looked like this:
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                    <p>Finally, I deleted all of the bullet points on the list items with the 'navbar' class, mostly because navigation bars don't<br> have bullet points. In order to do this I used the list-style declaration, which sets all properties of
+                        a list in one<br> declaration. At that point, my code looked like this:
+                        <br>
+                        <br>
+                        <br>
+                        <br></p>
                 </div>
             </div>
-        <div class="imageandtextalignment">
+            <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
                         <li>.navbar {</li>
@@ -1286,35 +1473,48 @@
                         <span class="indenthere"><li>text-align:center;</li></span>
                         <li>}</li>
                         <li>.navbar a {</li>
-                        <div class="indenthere"><li>display:inline-block;</li></div>
-                        <div class="indenthere"><li>color: white;</li></div>
-                        <div class="indenthere"><li>border:2px solid white;</li></div>
-                        <div class="indenthere"><li>text-decoration:none;</li></div>
-                        <div class="indenthere"><li>padding:10px;</li></div>
+                        <div class="indenthere">
+                            <li>display:inline-block;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>color: white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>border:2px solid white;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>text-decoration:none;</li>
+                        </div>
+                        <div class="indenthere">
+                            <li>padding:10px;</li>
+                        </div>
                         <li>}</li>
                         <li>.navbar li {</li>
-                        <div class="indenthere"><li>list-style:none;</li></div>
+                        <div class="indenthere">
+                            <li>list-style:none;</li>
+                        </div>
                         <li>}</li>
                     </ul>
                 </div>
             </div>
         </div>
-                <h3>The Header</h3>
+        <h3>The Header</h3>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The header is pretty straightforward. To make the header, I used this code:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code">
-                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;<p></p>
+                    <p>&lt;h1&gt;Who am I and What Have I Learned?&lt;/h1&gt;
+                        <p></p>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>The title of a website is meant to be very clearly visible, so I decide to use CSS code to put my<br>
                 title in the center of my page. This is the CSS code I used:</p></span>
-            </div>  
+            </div>
             <div class="imageandtextalignment">
                 <div class="code2">
                     <ul class="listlesslist">
@@ -1323,7 +1523,7 @@
                         <li>}</li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
         <h3>The Background</h3>
         <span class="indenthere"><p class="imageandtextalignment">Technically speaking, the background color is white. Despite this, when you are looking at my home page, you will 
@@ -1338,7 +1538,7 @@
                     <li>&lt;/div&gt;</li>
                 </ul>
             </div>
-        </div>  
+        </div>
         <div class="alignment">
             <div class="imageandtextalignment">
                 <span class="indenthere"><p>I wrap this div around the content, as shown above.The whole<br>
@@ -1360,44 +1560,47 @@
                 </div>
             </div>
         </div>
-        <div class="indenthere"><p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), 
-        the background-color declaration chages the background color to my desired color(black), the color declaration changes the text color to my
-        desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p></div>
-        <div class="indenthere"><p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference:
-        the alignment. Instead of the text alignment being set to "right", it is set to "center".</p></div>
+        <div class="indenthere">
+            <p>In this CSS, the padding declaration adds a little space between the content and other objects on the page(including the ede of the screen), the background-color declaration chages the background color to my desired color(black), the color
+                declaration changes the text color to my desired color(white), and the text-align declaration puts the text on my desired side of the webpage(right).</p>
+        </div>
+        <div class="indenthere">
+            <p>For my second topic, "What Have I Learned?", I used the same div with a different name and a singular difference: the alignment. Instead of the text alignment being set to "right", it is set to "center".</p>
+        </div>
         <h3>The Subheadings</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
+                <span class- "indenthere"><p>It's simple to make the subheadings. This is all the code that it takes:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
+                <img src="https://image.ibb.co/bRHUyw/Screenshot_2017_10_13_at_12_16_23_AM.png"></img>
             </div>
             <div class="imageparagraph">
-                <span class-"indenthere"><p>I also used a "text-align:center;" to move the header to my desired area, the center.<br>
+                <span class- "indenthere"><p>I also used a "text-align:center;" to move the header to my desired area, the center.<br>
                 For the even smaller headings, I used the same code, except I switched all '2's with '3's. </p></span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
+                <img src="https://image.ibb.co/dPH9WG/Screenshot_2017_10_13_at_12_21_15_AM.png"></img>
             </div>
-        </div> 
+        </div>
         <h3>The Lists</h3>
-        <div class="alignment">    
+        <div class="alignment">
             <div class="imageparagraph">
-                <span class-"indenthere"><p>It's simple to make the lists. This is all the code that it takes to make two:</p></Span>
+                <span class- "indenthere"><p>It's simple to make the lists. This is all the code that it takes to make two:</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/gno8rG/Screenshot_2017_10_13_at_12_42_22_AM.png"></img>
+                <img src="https://image.ibb.co/gno8rG/Screenshot_2017_10_13_at_12_42_22_AM.png"></img>
             </div>
             <div class="imageparagraph">
-                <span class-"indenthere"><p>Really all I did to have the two lists come out next to each other in the center of the page was add<br>
+                <span class- "indenthere"><p>Really all I did to have the two lists come out next to each other in the center of the page was add<br>
                 the CSS "display:inline-block;" and "text-align:center;" declarations, as shown to the right. I<br>
                 repeated this for the second set of lists.</p></Span>
             </div>
             <div class="paragraphimage3">
-                 <img src="https://image.ibb.co/hk9WBG/Screenshot_2017_10_13_at_12_48_19_AM.png"></img>
+                <img src="https://image.ibb.co/hk9WBG/Screenshot_2017_10_13_at_12_48_19_AM.png"></img>
             </div>
-        </div>    
+        </div>
     </div>
 </body>
+
 </html>

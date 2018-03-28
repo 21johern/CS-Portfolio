@@ -1,6 +1,5 @@
+/* This sectionsimply gives all items with the class "inlineBlock" the display style of inline-block, helping align them the way I desire for one 
+word. */
 .inlineBlock {
     display: inline-block;
-}
-.block {
-    display: block;
 }

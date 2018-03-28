@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Links this document to a processing document so that the images I draw on the canvas function properly. -->
     <script type="text/javascript" src="../int2checkpoints/processing.min.js"></script>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://i1.wp.com/www.thegamegal.com/wp-content/uploads/2011/06/hangman.jpg?ssl=1" type="text/css"/>
+    <!-- Gives my hangman page a hangman game as the icon in the tab. -->
+    <link rel="icon" href="https://i1.wp.com/www.thegamegal.com/wp-content/uploads/2011/06/hangman.jpg?ssl=1" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Self explanatory.-->
     <title>Hangman Game</title>
-    <link rel="stylesheet" href="iwPage.css" type="text/css"/>
+    <!-- Links this document to my css document to hep format it and make it appear the way hangman does. -->
+    <link rel="stylesheet" href="iwPage.css" type="text/css" />
+    <!-- Links this the navbar portion of this document to a css file that makes it look less like a list, and more like an actual bar. -->
+    <link rel="stylesheet" href="../int1checkpoints/navbar.css" type="text/css" />
 </head>
 <body>
-    <h1>Hangman</h1>
-    <!--The following divs are where the letters appear when the user geusses the letter correctly.-->
-    <canvas id="output-canvas"></canvas>
-    <script type="text/javascript" src="hangmanAnimation.js"></script>
-    <p id = "message"></p>
-    <div class = "inlineBlock" id="letter1">__</div>
-    <div class = "inlineBlock" id="letter2">__</div>
-    <div class = "inlineBlock" id="letter3">__</div>
-    <div class = "inlineBlock" id="letter4">__</div>
-    <div class = "inlineBlock" id="letter5">__</div>
-    <div class = "inlineBlock" id="letter6">__</div>
-    <p></p>
-    <span class = "block"><input id= "letterGuessed"/></span>
-    <button class = "inlineBlock" id="button">Check Letter</button>
-    <p>Guessed:</p>
-    <div id = "guess1">1.) undefined</div>
-    <div id = "guess2">2.) undefined</div>
-    <div id = "guess3">3.) undefined</div>
-    <div id = "guess4">4.) undefined</div>
-    <div id = "guess5">5.) undefined</div>
-    <div id = "guess6">6.) undefined</div>
-    <div id = "guess7">7.) undefined</div>
-    <div id = "guess8">8.) undefined</div>
-    <div id = "guess9">9.) undefined</div>
-    <div id = "guess10">10.) undefined</div>
-    <div id = "guess11">11.) undefined</div>
-    <script type="text/javascript" src="iwVariableSetUp.js"></script>
-</body>
+    <body>
+        <!--Navbar. . . I have explained this 1,000,000 times, so imma just pass.-->
+        <ul class="navbar">
+            <a href="../int1checkpoints/index.html" target="_blank">
+                <li>Homepage</li>
+            </a>
+            <a href="../int1checkpoints/moreaboutme.html" target="_blank">
+                <li>More About Me</li>
+            </a>
+            <a href="../int1checkpoints/listoftags.html" target="_blank">
+                <li>What I've Learned About Coding</li>
+            </a>
+            <a href="../int1checkpoints/howtopage.html" target="_blank">
+                <li>How I Made the Homepage and Both Subpages</li>
+            </a>
+            <a href="../int2checkpoints/GAartpage.html" target="_blank">
+                <li>My Art Design Page</li>
+            </a>
+            <a href="../int2checkpoints/howtoartpage.html" target="_blank">
+                <li>How I Made the Art Page</li>
+            </a>
+            <a href="howToHangman.html" target="_blank">
+                <li>How I Made this Game</li>
+            </a>
+        </ul>    
+            <h1>Hangman</h1>
+            <!--The following divs are where the letters appear when the user geusses the letter correctly.-->
+            <canvas id="output-canvas"></canvas>
+            <script src="hangmanAnimation.js"></script>
+            <!-- Where the message telling you if you lose/win appears. The id allows you to use javascript to add text when certain things happen, -->
+            <p id="message"></p>
+            <!-- Each of these is a line that is supposed to be the blank spaces that you have not yet filled with a letter. As you guess correctly,
+            these blanks will be filled with letters. The id allows this to happen through javascript, and the class simply references to a css document
+            which puts these in one line, making it seem like one word.-->
+            <div class="inlineBlock" id="letter1">__</div>
+            <div class="inlineBlock" id="letter2">__</div>
+            <div class="inlineBlock" id="letter3">__</div>
+            <div class="inlineBlock" id="letter4">__</div>
+            <div class="inlineBlock" id="letter5">__</div>
+            <div class="inlineBlock" id="letter6">__</div>
+            <!-- Simply here for spacing. I could accomplish this with css, but this was pretty quick, and why waste time? -->
+            <p></p>
+            <!-- This allows the user to input letters, to be checked, and the id references to javascript that allows this input to 
+            be used to check letters. -->
+            <input id = "letterGuessed"/>
+            <!--This button makes it so that the user can decide when to check their letter instead of checking 100% of the time, or on a timer. 
+            This way, it is instantaneous, but not incessant and annoying, avoiding accepting the same guess over and over. The name simply tells 
+            the user what the button will do in the first place. -->
+            <button class="inlineBlock" id="button">Check Letter</button>
+            <!--Tells the user that the items below are the letters that they have guessed. They will remain undefined until the user clicks 
+            "Check Letter", at which time, the appropriate number guess will change to that number/word. This is to help prevent guessing 
+            the same thing twice, as in the normal game. -->
+            <p>Guessed:</p>
+            <!--The ids seen here allow the div to change it's text when the check letter buton is hit, using modification through javascript. -->
+            <div id="guess1">1.) undefined</div>
+            <div id="guess2">2.) undefined</div>
+            <div id="guess3">3.) undefined</div>
+            <div id="guess4">4.) undefined</div>
+            <div id="guess5">5.) undefined</div>
+            <div id="guess6">6.) undefined</div>
+            <div id="guess7">7.) undefined</div>
+            <div id="guess8">8.) undefined</div>
+            <div id="guess9">9.) undefined</div>
+            <div id="guess10">10.) undefined</div>
+            <div id="guess11">11.) undefined</div>
+            <!-- The script here links the code with ids to a separate javascript file, so that it can be modified. -->
+            <script type="text/javascript" src="iwVariableSetUp.js"></script>
+    </body>
 </html>
